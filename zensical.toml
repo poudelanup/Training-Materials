@@ -1,0 +1,128 @@
+[project]
+site_name = "Hydrological Modelling Training with QGIS"
+site_description = "5-Day Training Plan for Hydrological Modelling using Geospatial and Remote Sensing Data"
+site_author = "Krishna Lodha"
+docs_dir = "docs"
+site_dir = "site"
+repo_url = "https://github.com/Rotten-Grapes-Pvt-Ltd/QGIS-WECS"
+
+extra_javascript = [
+    "javascripts/mathjax.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+]
+
+nav = [
+    { "Home" = "index.md" },
+    { "About Us" = "about_us.md" },
+    { "Spatial Thinking & GIS" = [
+        "day1/index.md",
+        "day1/01_intro_gis.md",
+        "day1/02_role_geospatial.md",
+        "day1/03_spatial_data_models.md",
+        "day1/04_crs_projections.md",
+        "day1/05_map_scale.md",
+        "day1/06_open_geospatial.md",
+        "day1/07_geospatial_formats.md"
+    ]},
+    { "Remote Sensing & EO" = [
+        "day2/index.md",
+        "day2/01_intro_remote_sensing.md",
+        "day2/02_eo_missions.md",
+        "day2/03_satellite_characteristics.md",
+        "day2/04_bands_composites.md",
+        "day2/05_accessing_data.md",
+        "day2/06_preparation_workflows.md",
+        "day2/07_dem_terrain.md",
+        "day2/08_applications_hydrology.md",
+        "day2/09_practical_session.md"
+    ]},
+    { "QGIS & Data Management" = [
+        "day3/index.md",
+        "day3/01_intro_qgis.md",
+        "day3/02_plugins_extensions.md",
+        "day3/03_hydrology_plugins.md",
+        "day3/04_geospatial_data_management.md",
+        "day3/05_layer_styling.md",
+        "day3/06_attribute_tables.md",
+        "day3/07_vector_geoprocessing.md",
+        "day3/08_raster_processing.md",
+        "day3/09_georeferencing.md",
+        "day3/10_spatial_queries.md",
+        "day3/11_web_gis_ogc.md",
+        "day3/12_intro_spatial_databases.md",
+        "day3/13_practical_session.md"
+    ]},
+    
+    { "Hydrology GIS Applications" = [
+        "hydrology_apps/index.md",
+        "hydrology_apps/watershed_characterization.md",
+        "hydrology_apps/rainfall_analysis.md",
+        "hydrology_apps/reservoir_monitoring.md",
+        "hydrology_apps/landuse_percentage.md",
+        "hydrology_apps/flood_hazard_mapping.md",
+        "hydrology_apps/drought_assessment.md",
+        "hydrology_apps/groundwater_potential.md",
+        "hydrology_apps/river_morphology.md",
+        "hydrology_apps/water_quality.md",
+        "hydrology_apps/water_accounting.md",
+        "hydrology_apps/basin_water_balance.md",
+        "hydrology_apps/evapotranspiration_accounting.md",
+        "hydrology_apps/reservoir_evaporation_losses.md",
+        "hydrology_apps/hydrological_modeling.md"
+    ]}
+]
+
+[project.markdown_extensions."pymdownx.arithmatex"]
+generic = true
+
+[project.markdown_extensions."pymdownx.superfences"]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+
+
+
+[project.theme]
+logo = "images/logo.png"
+features = [
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips"
+]
+
+[[project.extra.social]]
+icon = "material/github"
+link = "https://github.com/Rotten-Grapes-Pvt-Ltd/QGIS-WECS"
+name = "GitHub"
+
+[[project.extra.social]]
+icon = "material/earth"
+link = "https://rottengrapes.tech/"
+name = "Website"
+
+[[project.extra.social]]
+icon = "material/email"
+link = "mailto:krishna@rottengrapes.tech"
+name = "Email"
+
+
+[[project.extra.social]]
+icon = "material/linkedin"
+link = "https://www.linkedin.com/company/rottengrapes"
+name = "LinkedIn"
